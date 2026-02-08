@@ -1,0 +1,117 @@
+:root {
+	--bg: #0b1220;
+	--card: rgba(255, 255, 255, 0.06);
+	--border: rgba(255, 255, 255, 0.12);
+	--text: #e5e7eb;
+	--muted: rgba(229, 231, 235, 0.75);
+	--danger: #f87171;
+	--accent: #60a5fa;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family:
+		system-ui,
+		-apple-system,
+		Segoe UI,
+		Roboto,
+		Ubuntu,
+		Cantarell,
+		Noto Sans,
+		Arial,
+		sans-serif;
+	background: var(--bg);
+	color: var(--text);
+}
+
+h1 {
+	margin: 0;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+.container {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 32px 16px;
+}
+
+.card {
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	padding: 18px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+}
+
+.btn {
+	height: 40px;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	background: rgba(255, 255, 255, 0.1);
+	color: var(--text);
+	padding: 0 14px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.btn:disabled {
+	opacity: 0.55;
+	cursor: not-allowed;
+}
+
+.btn--danger {
+	border-color: rgba(248, 113, 113, 0.35);
+	background: rgba(248, 113, 113, 0.14);
+}
+
+.btn--active {
+	border-color: rgba(96, 165, 250, 0.55);
+	background: rgba(96, 165, 250, 0.18);
+}
+
+.input {
+	height: 40px;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	outline: none;
+	background: rgba(255, 255, 255, 0.08);
+	color: var(--text);
+	padding: 0 12px;
+	font-size: 14px;
+	width: 100%;
+}
+.input::placeholder {
+	color: rgba(229, 231, 235, 0.5);
+}
+
+.row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.row--wrap {
+	flex-wrap: wrap;
+}
+
+.status {
+	margin-top: 10px;
+	padding: 10px 12px;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	background: rgba(255, 255, 255, 0.05);
+	color: rgba(229, 231, 235, 0.9);
+	font-size: 13px;
+}
