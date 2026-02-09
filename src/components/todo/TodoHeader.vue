@@ -8,15 +8,10 @@ const emit = defineEmits<{ (e: 'reload'): void }>()
 
 <template>
 	<div class="header">
-		<div>
-			<h1 class="title">Vue To-Do</h1>
-			<p class="subtitle">
-				Данные: JSONPlaceholder. Сейчас делаем базу: загрузка и отображение.
-			</p>
-			<button class="btn" @click="emit('reload')" :disabled="props.loading">
-				Обновить
-			</button>
-		</div>
+		<h1 class="title">Vue To-Do</h1>
+		<button class="btn" @click="emit('reload')" :disabled="props.loading">
+			Обновить
+		</button>
 	</div>
 </template>
 
@@ -25,7 +20,7 @@ const emit = defineEmits<{ (e: 'reload'): void }>()
 	display: flex;
 	gap: 12px;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	flex-wrap: wrap;
 }
 .title {

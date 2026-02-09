@@ -11,7 +11,7 @@ export const fetchTodos = async (params?: {
 
 	const res = await fetch(`${API}?userId=${userId}&_limit=${limit}`)
 
-	if (res.ok) throw new Error(`HTTP ${res.status}`)
+	if (!res.ok) throw new Error(`HTTP ${res.status}`)
 
 	return (await res.json()) as Todo[]
 }

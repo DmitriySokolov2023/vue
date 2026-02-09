@@ -41,4 +41,8 @@ function set(v: Filter) {
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.row {
+	margin-top: 20px;
+}
+</style>

@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { Todo } from '../../types/todo'
+
+defineProps<{ todo: Todo; disabled: boolean }>()
+defineEmits<{ (e: 'toggle', t: Todo): void }>()
+</script>
 
 <template>
 	<li class="item">
