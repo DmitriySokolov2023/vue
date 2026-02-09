@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const props = withDefaults(defineProps<{ loading?: boolean }>(), {
-	loading: false,
-})
+const props = defineProps<{ loading: boolean }>()
 
 const emit = defineEmits<{ (e: 'reload'): void }>()
 </script>

@@ -15,6 +15,7 @@ defineEmits<{ (e: 'toggle', t: Todo): void }>()
 		<TodoItem
 			v-for="t in todoList"
 			:todo="t"
+			:key="t.id"
 			:disabled="disabled"
 			@toggle="$emit('toggle', $event)"
 		/>
