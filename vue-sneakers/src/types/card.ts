@@ -3,4 +3,6 @@ export interface CardInterface {
 	title: string
 	price: number
 	imageUrl: string
+	isFavorite?: boolean
+	isAdded?: boolean
 }

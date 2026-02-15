@@ -11,6 +11,7 @@
 		<ul class="flex items-center gap-10">
 			<li
 				class="flex items-center gap-3 text-gray-500 hover:text-black cursor-pointer"
+				@click="emit('close')"
 			>
 				<img src="/cart.svg" alt="Cart" />
 				<b>1205 руб.</b>
@@ -31,6 +32,10 @@
 	</header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const emit = defineEmits<{
+	(e: 'close'): void
+}>()
+</script>
 
 <style scoped></style>
