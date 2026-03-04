@@ -5,7 +5,7 @@
 			<div>
 				<h2 class="text-xl font-bold uppercase">Vue Sneakers</h2>
 				<p class="text-slate-400">Магазин лучших кроссовок</p>
-				<p>Добро пожаловать!</p>
+				<p>Добро пожаловать!!!!</p>
 			</div>
 		</div>
 
