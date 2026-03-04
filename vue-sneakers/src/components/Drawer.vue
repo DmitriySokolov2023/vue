@@ -14,6 +14,7 @@ const emit = defineEmits<{
 	></div>
 	<div class="fixed top-0 right-0 h-full w-1/5 bg-white z-20 p-10">
 		<DrawerHead @close="emit('close')" />
+		<div>Test</div>
 		<div class="flex flex-col h-full">
 			<div class="flex-1 overflow-auto">
 				<CartItemList />
